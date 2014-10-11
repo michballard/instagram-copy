@@ -21,6 +21,16 @@ describe 'posts' do
   	end
   end
 
+  context 'time created' do 
+  	before do
+  		Post.create(title: 'Here is a picture')
+  	end
+  	it 'is displayed with a post' do 
+  		visit '/posts'
+  		expect(page).to have_content('less than a minute ago')
+  	end
+  end
+
   describe 'creating posts' do 
   	it 'prompts user to upload picture and fill in title, then displays a new post' do 
       visit '/posts'
@@ -59,4 +69,5 @@ describe 'posts' do
       expect(page).to have_content 'Post successfully deleted'
     end    
   end
+
 end 

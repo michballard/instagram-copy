@@ -3,6 +3,7 @@
 <% end %>
 
 <h2><%= post.title %></h2>
+<p><%= time_ago_in_words(post.created_at) %> ago</p>
 
 <% post.tags.each do |tag| %>
   <%= link_to tag.text, tag %>
