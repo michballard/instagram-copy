@@ -29,6 +29,7 @@ describe 'posts' do
       attach_file 'Image', Rails.root.join('spec/images/photo.jpg')
       click_button 'Create Post'
       expect(page).to have_content 'Here is a picture'
+      # expect(page).to have_css 'photo.jpg'
       expect(current_path).to eq '/posts'
   	end 
   end

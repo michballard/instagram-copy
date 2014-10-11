@@ -1,0 +1,15 @@
+<p><% if post.image.present? %>
+      <%= image_tag post.image.url(:medium) %></p>
+<% end %>
+
+<h2><%= post.title %></h2>
+
+<% post.tags.each do |tag| %>
+  <%= link_to tag.text, tag %>
+<% end %>
+
+<%= link_to "Edit", 
+    edit_post_path(post) %>
+<%= link_to "Delete", 
+    post_path(post),
+    method: :delete %>
