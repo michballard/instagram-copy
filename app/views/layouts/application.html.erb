@@ -25,11 +25,11 @@
 
 	  <div class="session-info">		
 		  <% if user_signed_in? %>
-			  <span id="user-email">Signed in as <%= current_user.email %></span>
+			  <span class="session-space">Signed in as <%= current_user.email %></span>
 			  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>			  
 			<% else %>
-			  <p><%= link_to "Sign in", new_user_session_path %>
-			  			  <%= link_to "Sign up", new_user_registration_path %></p>
+			  <span class="session-space"><%= link_to "Sign in", new_user_session_path %></span>
+			  			  <%= link_to "Sign up", new_user_registration_path %>
 			<% end %>
 		</div>
 

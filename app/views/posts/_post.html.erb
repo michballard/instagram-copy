@@ -6,20 +6,22 @@
 		<% if post.image.present? %>
 	    <%= image_tag post.image.url(:medium), class: "post-image" %>
 	  <% end %>
-	 
-		<h2><%= post.title %></h2>
-		<p><%= time_ago_in_words(post.created_at) %> ago</p>
+	  
+	  <div class="post-content">
+			<h4><%= post.title %></h4>
+			<p><%= time_ago_in_words(post.created_at) %> ago</p>
 
-		<% post.tags.each do |tag| %>
-		  <%= link_to tag.text, tag %>
-		<% end %>
+			<% post.tags.each do |tag| %>
+			  <%= link_to tag.text, tag %>
+			<% end %>
 
-		<%= link_to "Edit", 
-		    edit_post_path(post) %>
-		<%= link_to "Delete", 
-		    post_path(post),
-		    method: :delete %>
-
+			<div class="edit-delete-links"><%= link_to "Edit", 
+					    edit_post_path(post) %>
+					<%= link_to "Delete", 
+					    post_path(post),
+					    method: :delete %></div>
+    </div>
+    
   </div>
   <div class="col-md-3">
   </div>
