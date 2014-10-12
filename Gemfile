@@ -39,6 +39,13 @@ gem "paperclip", "~> 4.2"
 # Add users and authentication
 gem 'devise'
 
+# Add facebook authentication
+gem 'omniauth-facebook'
+
+# Add bootstrap for styling
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
