@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 describe 'tagging posts' do 
+
+  before do 
+  	michelle = User.create(email: 'a@a.com', password: '12345678', password_confirmation: '12345678')
+  	login_as michelle 
+  end
   it 'displays tags as links under posts' do 
     visit '/posts'
     click_link 'Add a post'
