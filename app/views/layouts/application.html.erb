@@ -17,20 +17,19 @@
       <ul class="nav navbar-nav">
         <li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
         <li><a href="/posts/new"><span class="glyphicon glyphicon-plus" id="AddPost"></span></a></li>
-        <div><a href="/posts/new" style="visibility: hidden">Add a post</a></div>
+        <div class="hidden"><a href="/posts/new" style="visibility: hidden">Add a post</a></div>
       </ul>
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/"><span class="logo">Instagram</span></a>
-      </div>
     </div>
+
+    <a class="navbar-brand" href="/"><span class="logo">Instagram</span></a>
 
 	  <div class="session-info">		
 		  <% if user_signed_in? %>
-			  Signed in as: <%= current_user.email %>
-			  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+			  <span id="user-email">Signed in as <%= current_user.email %></span>
+			  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>			  
 			<% else %>
-			  <%= link_to "Sign in", new_user_session_path %>
-			  <%= link_to "Sign up", new_user_registration_path %>
+			  <p><%= link_to "Sign in", new_user_session_path %>
+			  			  <%= link_to "Sign up", new_user_registration_path %></p>
 			<% end %>
 		</div>
 

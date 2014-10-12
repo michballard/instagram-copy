@@ -29,16 +29,20 @@ FONTS
 /*==========
 LAYOUT
 ========== */
+
 body {
-  padding-top: 80px;
+  /*padding-top: 10px;*/
   font-family: 'Cabin', sans-serif;
-};
+  margin: 0;
+  padding: 0;
+}
 
 .navbar {
   background: -webkit-linear-gradient(#5C85AD, #336699); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#5C85AD, #336699); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#5C85AD, #336699); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#5C85AD, #336699); /* Standard syntax */
+	height: 30px;
 }
 
 .glyphicon {
@@ -48,8 +52,9 @@ body {
 }
 
 .navbar-brand {
-	text-align: center;
 	font-family: 'Lobster', cursive;
+  position: absolute;
+  left: 50%;
 }
 
 .logo {
@@ -58,13 +63,46 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.navbar-collapse {
+	float: left;
+	display: block;	
+}
+
 .dropdown {
 	position: relative;
 	overflow: visible;
 }
 
 .session-info {
+	float: right;	
   background: -webkit-linear-gradient(white, #85A3C2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: right;
+  padding-top: 10px;
+}
+
+#user-email {
+	padding-right: 10px;
+}
+
+.post-image {
+  border: 1px solid rgba(161,161,161,0.5);
+  border-radius: 5px 5px 0 0;
+}
+
+.col-md-6 {
+	padding: 20px 0 20px 40px;
+  border-left: 1px solid rgba(161,161,161,0.5);
+  border-right: 1px solid rgba(161,161,161,0.5);
+}
+
+.container .navbar .collapse .hidden {
+	height: 50px;
+}
+
+.alert {
+	margin-top: 50px;
+	margin-bottom: 0;
+	padding: 0;
 }
