@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: 17cae0e7956e4c78891875ede83f1c4f173bc9ce
+  specs:
+    paperclip (4.2.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,6 +37,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.6)
     arel (5.0.1.20140414130214)
     autoprefixer-rails (3.1.1.20141001)
       execjs
@@ -73,6 +84,8 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.1)
     jwt (1.0.0)
+    launchy (2.4.2)
+      addressable (~> 2.3)
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
     mime-types (2.3)
@@ -100,11 +113,6 @@ GEM
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
-    paperclip (4.2.0)
-      activemodel (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      cocaine (~> 0.5.3)
-      mime-types
     pg (0.17.1)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -188,8 +196,9 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  launchy
   omniauth-facebook
-  paperclip (~> 4.2)
+  paperclip!
   pg
   rails (= 4.1.6)
   rspec-rails

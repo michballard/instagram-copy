@@ -31,10 +31,11 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'warden'
+  gem 'launchy'
 end
 
 # Add pictures
-gem "paperclip", "~> 4.2"
+gem "paperclip", github: 'thoughtbot/paperclip'
 
 # Add users and authentication
 gem 'devise'

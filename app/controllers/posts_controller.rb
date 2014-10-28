@@ -10,7 +10,9 @@ class PostsController < ApplicationController
   end
 
   def create
+
   	@post = Post.create(params[:post].permit(:title, :image, :tag_list))
+    # @post.save
   	redirect_to posts_path
   end
 

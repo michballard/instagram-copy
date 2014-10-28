@@ -11,7 +11,7 @@ describe 'tagging posts' do
     click_link 'Add a post'
     fill_in 'Title', with: 'Here is a picture'
     fill_in 'Tags', with: '#test, #picture'
-    # attach_file 'Image', Rails.root.join('spec/images/photo.jpg')
+    attach_file 'Image', Rails.root.join('spec/images/photo.jpg')
     click_button 'Create Post'
     expect(page).to have_link '#test'
     expect(page).to have_link '#picture'
