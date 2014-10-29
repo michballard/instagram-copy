@@ -125,3 +125,35 @@ h3 {
   margin-left: auto;
   margin-right: auto 
 }
+
+/*Footer*/
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -25px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 25px; 
+}
+.site-footer {
+  /*background: rgba(161,161,161,0.5);*/
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  background: -webkit-linear-gradient(rgba(161,161,161,0.5), white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(161,161,161,0.5), white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(161,161,161,0.5), white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(161,161,161,0.5), white); /* Standard syntax */
+}
+
