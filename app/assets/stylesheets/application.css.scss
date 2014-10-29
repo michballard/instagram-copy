@@ -53,8 +53,7 @@ body {
 
 .navbar-brand {
 	font-family: 'Lobster', cursive;
-  position: absolute;
-  left: 50%;
+  padding-left: 30px;
 }
 
 .logo {
@@ -96,7 +95,7 @@ body {
 }
 
 .each-post {
-  padding: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
 }
 
 .container .navbar .collapse .hidden {
