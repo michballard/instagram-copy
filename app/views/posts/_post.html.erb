@@ -1,4 +1,4 @@
-<section class="row">
+<section class="row each-post">
 
   <div class="col-md-3">
   </div>
@@ -10,14 +10,27 @@
     <% end %>  
   
     <div class="post-content">
+
       <h4><%= post.title %></h4>
-      <p><%= time_ago_in_words(post.created_at) %> ago</p>
-      <% post.tags.each do |tag| %>
-        <%= link_to tag.text, tag %>
-      <% end %>
-      <div class="edit-delete-links"><%= link_to "Edit", edit_post_path(post) %>
-        <%= link_to "Delete", post_path(post), method: :delete %>
+
+      <div class="row">
+        
+        <div class="col-md-6">
+          <p><%= time_ago_in_words(post.created_at) %> ago</p>
+          <% post.tags.each do |tag| %>
+            <%= link_to tag.text, tag %>
+          <% end %>
+        </div>
+
+        <div class="col-md-6">
+          <div class="edit-delete-links">
+            <%= link_to "Edit", edit_post_path(post) %>
+            <%= link_to "Delete", post_path(post), method: :delete %>
+          </div>
+        </div>
+
       </div>
+
     </div>
   
   </div>

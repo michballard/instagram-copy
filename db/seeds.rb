@@ -11,40 +11,50 @@ Post.destroy_all
 
 post_1 = Post.new(title: "The dark pier")
 post_1.image = File.open('app/assets/images/seed_images/image_1.jpg')
+post_1.tag_list=("#dark, #pier")
 post_1.save!
 
 post_2 = Post.new(title: "Birds flying to a tree")
 post_2.image = File.open('app/assets/images/seed_images/image_2.jpg')
+post_2.tag_list=("#birds, #flying, #tree")
 post_2.save!
 
 post_3 = Post.new(title: "Time to take a break")
 post_3.image = File.open('app/assets/images/seed_images/image_3.jpg')
+post_3.tag_list=("#breaktime")
 post_3.save!
 
 post_4 = Post.new(title: "Riding through the sunset")
 post_4.image = File.open('app/assets/images/seed_images/image_4.jpg')
+post_4.tag_list=("#sunset, #bicycle")
 post_4.save!
 
 post_5 = Post.new(title: "Under my umbrella")
 post_5.image = File.open('app/assets/images/seed_images/image_5.jpg')
+post_5.tag_list=("#umbrella")
 post_5.save!
 
 post_6 = Post.new(title: "Pier to infinity")
 post_6.image = File.open('app/assets/images/seed_images/image_6.jpg')
+post_6.tag_list=("#pier")
 post_6.save!
 
 post_7 = Post.new(title: "More piers")
 post_7.image = File.open('app/assets/images/seed_images/image_7.jpg')
+post_7.tag_list=("#pier")
 post_7.save!
 
 post_8 = Post.new(title: "Bright front door")
 post_8.image = File.open('app/assets/images/seed_images/image_8.jpg')
+post_8.tag_list=("#red, #door, #yellow, #wall")
 post_8.save!
 
 post_9 = Post.new(title: "Sunset")
 post_9.image = File.open('app/assets/images/seed_images/image_9.jpg')
+post_9.tag_list=("#sunset")
 post_9.save!
 
-post_10 = Post.new(title: "Mustang")
+post_10 = Post.new(title: "Mustang Sally")
 post_10.image = File.open('app/assets/images/seed_images/image_10.jpg')
+post_10.tag_list=("#mustang, #red")
 post_10.save!
