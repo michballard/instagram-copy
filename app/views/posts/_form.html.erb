@@ -1,12 +1,12 @@
 <%= form_for @post, html: {multipart: true} do |f| %>
-	<%= f.label :title %>
-	<%= f.text_field :title %>
+	<p><%= f.label :title %></p>
+	<p><%= f.text_field :title, placeholder: 'e.g. about your picture' %></p>
 
-	<%= f.label :tag_list, 'Tags' %>
-	<%= f.text_field :tag_list %>
+	<p><%= f.label :tag_list, 'Tags' %></p>
+	<p><%= f.text_field :tag_list, placeholder: 'e.g. #exciting, #fun' %></p>
 
-	<%= f.label :image %>
-	<%= f.file_field :image %>
+	<p><%= f.label :image, 'Image (required)' %></p>
+	<p><%= f.file_field :image %></p>
 	
 	<%= f.submit %>
 <% end %>

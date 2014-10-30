@@ -20,8 +20,8 @@ end
 
 describe 'filtering by tags' do 
   before do
-  	Post.create(title: 'Post A', tag_list: '#test, #hello')
-  	Post.create(title: 'Post B', tag_list: '#test, #fun')
+  	Post.create(title: 'Post A', image: File.open('spec/images/photo.jpg'), tag_list: '#test, #hello')
+  	Post.create(title: 'Post B', image: File.open('spec/images/photo.jpg'), tag_list: '#test, #fun')
   end
 
   it 'filters to show only tagged posts' do 

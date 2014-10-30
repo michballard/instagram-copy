@@ -26,7 +26,7 @@ This project is designed to replicate the website Instagram, with the main purpo
 - Rails
 - HTML
 - CSS
-- Bootstrap
+- Bootstrap-Sass
 - Postgres
 - Devise
 - Paperclip
@@ -35,6 +35,8 @@ This project is designed to replicate the website Instagram, with the main purpo
 
 - RSpec
 - Capybara
+- Warden
+- Launchy
 
 
 ## How to use instructions

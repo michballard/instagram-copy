@@ -37,8 +37,12 @@
       </div>
     </div>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice || alert %>
+      <div class="messages">
+        <%= notice %>
+        <span class="alert"><%= alert %></span>
+      </div>
+    <% end %>
 
     <section class="container">
       <%= yield %>
