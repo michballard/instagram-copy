@@ -31,10 +31,10 @@ LAYOUT
 ========== */
 
 body {
-  /*padding-top: 10px;*/
   font-family: 'Cabin', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: WhiteSmoke;
 }
 
 .navbar {
@@ -123,7 +123,8 @@ h3 {
   padding: 0 10px 10px 10px;
   display: block;
   margin-left: auto;
-  margin-right: auto 
+  margin-right: auto;
+  background-color: white;
 }
 
 /*Footer*/
@@ -146,14 +147,12 @@ html, body {
   height: 25px; 
 }
 .site-footer {
-  /*background: rgba(161,161,161,0.5);*/
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
 
-  background: -webkit-linear-gradient(rgba(161,161,161,0.5), white); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(161,161,161,0.5), white); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(161,161,161,0.5), white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(161,161,161,0.5), white); /* Standard syntax */
+  background: -webkit-linear-gradient(LightSteelBlue, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(LightSteelBlue, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(LightSteelBlue, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(LightSteelBlue, white); /* Standard syntax */
 }
-
