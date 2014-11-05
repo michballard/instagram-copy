@@ -39,6 +39,9 @@ end
 # Add pictures
 gem "paperclip", github: 'thoughtbot/paperclip'
 
+# Use AWS
+gem 'aws-sdk'
+
 # Add users and authentication
 gem 'devise'
 

@@ -42,7 +42,8 @@ This project is designed to replicate the website Instagram, with the main purpo
 
 ## How to view this app
 
-This application can be found on Heroku using the following link: [View Instagramme on Heroku]
+This application can be found on Heroku using the following link: 
+[View Instagramme on Heroku]
 
 ## How to run this app
 
