@@ -5,7 +5,9 @@
 
 This project is designed to replicate the website Instagram, with the main purpose to use Ruby on Rails.  
 
-<insert image>
+<strong>Screenshot view:</strong>
+
+![Screenshot](/app/assets/images/screenshot.png)
 
 
 ## Features
@@ -13,7 +15,6 @@ This project is designed to replicate the website Instagram, with the main purpo
 - Add a post with a picture, optionally including comments and tags
 - View all posts created
 - View related posts by clicking tags
-- A post can be edited or deleted by the signed in post author
 
 
 ## My lessons learned
@@ -48,12 +49,12 @@ This application can be found on Heroku using the following link:
 
 Clone this repository:
 ```shell
-git clone git@github.com:michballard/instagram-copy.git
+$ git clone git@github.com:michballard/instagram-copy.git
 ```
 
 Start server from command line:
 ```shell
-bin/rails s
+$ bin/rails s
 ```
 
 View app in browser by typing:
