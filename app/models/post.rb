@@ -1,6 +1,6 @@
 class Post < ActiveRecord::Base
   has_attached_file :image, styles: { medium: "500x500>", thumb: "100x100>" },
-                      :storage => :s3, :s3_protocol => :https,
+                      :storage => :s3
                       :s3_credentials => Proc.new{|a| a.instance.s3_credentials }
 
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
